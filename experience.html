@@ -4,20 +4,20 @@
   <meta charset="utf-8">
   <title>AKEEL's Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/min.css">
   <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
   <body>
 
     <div class="main-nav">
         <ul class="nav">
-          <li class="name">Muhammed Akeel</li>
+          <li class="name">Muhammed Akeel Jagot</li>
           <li><a href="index.html">Home</a></li>
           <li><a href="experience.html">Experience</a></li>
         </ul>
     </div>
 
     <header id="exp-background">
-      <img src="images/lion-lanscape.jpeg" alt="Couragious Lion" class="profile-image">
+      <img src="images/akeel.jpg" alt="AKEEL-MAJ" class="profile-image">
     </header>
 
     <main class="flex">
@@ -39,7 +39,12 @@
         <li><a href="https://www.linkedin.com/in/muhammed-akeel-jagot-b38001178" class="social linkedin">LinkedIn</a></li>
         <li><a href="https://github.com/AKEEL-MAJ" class="social github">Github</a></li>
       </ul>
-      <p class="copyright">Copyright 2019, Muhammed Akeel</p>
+      <p class="copyright">Copyright &nbsp;<span id="copyright_year"></span>, Muhammed Akeel</p>
     </footer>
+
+    <script>
+      function getCopyrightYear(){var a=(new Date).getFullYear();document.getElementById("copyright_year").innerHTML=a}getCopyrightYear();
+    </script>
+
   </body>
-  </html>
+</html>
